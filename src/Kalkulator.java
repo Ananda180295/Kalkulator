@@ -9,7 +9,11 @@
  * @author miftah
  */
 public class Kalkulator extends javax.swing.JFrame {
-
+    
+    String angka;
+    double jumlah, angka1, angka2;
+    int pilihan;
+    
     /**
      * Creates new form Kalkulator
      */
