@@ -399,6 +399,20 @@ public class Kalkulator extends javax.swing.JFrame {
             angka = Double.toString(jumlah);
             tampil.setText(angka);
             break;
+        case 3:
+            angka2 = Double.parseDouble(angka);
+            jumlah = angka1 * angka2;
+            angka = Double.toString(jumlah);
+            tampil.setText(angka);
+            break;
+        case 4:
+            angka2 = Double.parseDouble(angka);
+            jumlah = angka1 / angka2;
+            angka = Double.toString(jumlah);
+            tampil.setText(angka);
+            break;
+            default:
+            break;
     }
     }//GEN-LAST:event_jbsamadenganActionPerformed
 
