@@ -80,6 +80,11 @@ public class Kalkulator extends javax.swing.JFrame {
 
         jbtambah.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jbtambah.setText("+");
+        jbtambah.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtambahActionPerformed(evt);
+            }
+        });
 
         jb4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jb4.setText("4");
@@ -107,6 +112,11 @@ public class Kalkulator extends javax.swing.JFrame {
 
         jbkurang.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jbkurang.setText("-");
+        jbkurang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbkurangActionPerformed(evt);
+            }
+        });
 
         jb0.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jb0.setText("0");
@@ -331,6 +341,20 @@ public class Kalkulator extends javax.swing.JFrame {
     jumlah=0.0;
     angka="";
     }//GEN-LAST:event_jbclearActionPerformed
+
+    private void jbtambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtambahActionPerformed
+    angka1=Double.parseDouble(angka);
+    tampil.setText("+");
+    angka="";
+    pilihan=1;
+    }//GEN-LAST:event_jbtambahActionPerformed
+
+    private void jbkurangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbkurangActionPerformed
+    angka1=Double.parseDouble(angka);
+    tampil.setText("-");
+    angka="";
+    pilihan=1;
+    }//GEN-LAST:event_jbkurangActionPerformed
 
     /**
      * @param args the command line arguments
