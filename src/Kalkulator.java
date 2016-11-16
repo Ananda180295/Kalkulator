@@ -19,6 +19,7 @@ public class Kalkulator extends javax.swing.JFrame {
      */
     public Kalkulator() {
         initComponents();
+        angka="";
     }
 
     /**
@@ -79,6 +80,11 @@ public class Kalkulator extends javax.swing.JFrame {
 
         jb0.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jb0.setText("0");
+        jb0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb0ActionPerformed(evt);
+            }
+        });
 
         jbbagi.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jbbagi.setText("/");
@@ -88,12 +94,27 @@ public class Kalkulator extends javax.swing.JFrame {
 
         jb1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jb1.setText("1");
+        jb1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb1ActionPerformed(evt);
+            }
+        });
 
         jb2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jb2.setText("2");
+        jb2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb2ActionPerformed(evt);
+            }
+        });
 
         jb3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jb3.setText("3");
+        jb3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb3ActionPerformed(evt);
+            }
+        });
 
         jbkali.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jbkali.setText("*");
@@ -197,6 +218,26 @@ public class Kalkulator extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jb0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb0ActionPerformed
+    angka +="0";
+    tampil.setText(angka);
+    }//GEN-LAST:event_jb0ActionPerformed
+
+    private void jb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb1ActionPerformed
+    angka +="1";
+    tampil.setText(angka);
+    }//GEN-LAST:event_jb1ActionPerformed
+
+    private void jb2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb2ActionPerformed
+    angka +="2";
+    tampil.setText(angka);
+    }//GEN-LAST:event_jb2ActionPerformed
+
+    private void jb3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb3ActionPerformed
+    angka +="3";
+    tampil.setText(angka);
+    }//GEN-LAST:event_jb3ActionPerformed
 
     /**
      * @param args the command line arguments
