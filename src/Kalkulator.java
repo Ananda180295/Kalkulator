@@ -121,6 +121,11 @@ public class Kalkulator extends javax.swing.JFrame {
 
         jbclear.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jbclear.setText("C");
+        jbclear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbclearActionPerformed(evt);
+            }
+        });
 
         jb1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jb1.setText("1");
@@ -318,6 +323,14 @@ public class Kalkulator extends javax.swing.JFrame {
     angka +="-";
     tampil.setText(angka);
     }//GEN-LAST:event_jbplusminActionPerformed
+
+    private void jbclearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbclearActionPerformed
+    tampil.setText("");
+    angka1=0.0;
+    angka2=0.0;
+    jumlah=0.0;
+    angka="";
+    }//GEN-LAST:event_jbclearActionPerformed
 
     /**
      * @param args the command line arguments
