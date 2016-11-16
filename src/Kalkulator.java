@@ -192,6 +192,11 @@ public class Kalkulator extends javax.swing.JFrame {
 
         jbsamadengan.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jbsamadengan.setText("=");
+        jbsamadengan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbsamadenganActionPerformed(evt);
+            }
+        });
 
         tampil.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         tampil.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
@@ -379,6 +384,23 @@ public class Kalkulator extends javax.swing.JFrame {
     angka="";
     pilihan=4;
     }//GEN-LAST:event_jbbagiActionPerformed
+
+    private void jbsamadenganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbsamadenganActionPerformed
+    switch(pilihan){
+        case 1:
+            angka2 = Double.parseDouble(angka);
+            jumlah = angka1 + angka2;
+            angka = Double.toString(jumlah);
+            tampil.setText(angka);
+            break;
+        case 2:
+            angka2 = Double.parseDouble(angka);
+            jumlah = angka1 - angka2;
+            angka = Double.toString(jumlah);
+            tampil.setText(angka);
+            break;
+    }
+    }//GEN-LAST:event_jbsamadenganActionPerformed
 
     /**
      * @param args the command line arguments
