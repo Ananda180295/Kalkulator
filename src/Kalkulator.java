@@ -56,6 +56,11 @@ public class Kalkulator extends javax.swing.JFrame {
 
         jb7.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jb7.setText("7");
+        jb7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb7ActionPerformed(evt);
+            }
+        });
 
         jb8.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jb8.setText("8");
@@ -68,12 +73,27 @@ public class Kalkulator extends javax.swing.JFrame {
 
         jb4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jb4.setText("4");
+        jb4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb4ActionPerformed(evt);
+            }
+        });
 
         jb5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jb5.setText("5");
+        jb5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb5ActionPerformed(evt);
+            }
+        });
 
         jb6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jb6.setText("6");
+        jb6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb6ActionPerformed(evt);
+            }
+        });
 
         jbkurang.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jbkurang.setText("-");
@@ -238,6 +258,26 @@ public class Kalkulator extends javax.swing.JFrame {
     angka +="3";
     tampil.setText(angka);
     }//GEN-LAST:event_jb3ActionPerformed
+
+    private void jb4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb4ActionPerformed
+    angka +="4";
+    tampil.setText(angka);
+    }//GEN-LAST:event_jb4ActionPerformed
+
+    private void jb5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb5ActionPerformed
+    angka +="5";
+    tampil.setText(angka);
+    }//GEN-LAST:event_jb5ActionPerformed
+
+    private void jb6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb6ActionPerformed
+    angka +="6";
+    tampil.setText(angka);
+    }//GEN-LAST:event_jb6ActionPerformed
+
+    private void jb7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb7ActionPerformed
+    angka +="7";
+    tampil.setText(angka);
+    }//GEN-LAST:event_jb7ActionPerformed
 
     /**
      * @param args the command line arguments
