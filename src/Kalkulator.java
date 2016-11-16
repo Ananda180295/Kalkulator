@@ -128,6 +128,11 @@ public class Kalkulator extends javax.swing.JFrame {
 
         jbbagi.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jbbagi.setText("/");
+        jbbagi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbbagiActionPerformed(evt);
+            }
+        });
 
         jbclear.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jbclear.setText("C");
@@ -163,6 +168,11 @@ public class Kalkulator extends javax.swing.JFrame {
 
         jbkali.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jbkali.setText("*");
+        jbkali.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbkaliActionPerformed(evt);
+            }
+        });
 
         jbkoma.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jbkoma.setText(".");
@@ -353,8 +363,22 @@ public class Kalkulator extends javax.swing.JFrame {
     angka1=Double.parseDouble(angka);
     tampil.setText("-");
     angka="";
-    pilihan=1;
+    pilihan=2;
     }//GEN-LAST:event_jbkurangActionPerformed
+
+    private void jbkaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbkaliActionPerformed
+    angka1=Double.parseDouble(angka);
+    tampil.setText("*");
+    angka="";
+    pilihan=3;
+    }//GEN-LAST:event_jbkaliActionPerformed
+
+    private void jbbagiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbbagiActionPerformed
+    angka1=Double.parseDouble(angka);
+    tampil.setText("/");
+    angka="";
+    pilihan=4;
+    }//GEN-LAST:event_jbbagiActionPerformed
 
     /**
      * @param args the command line arguments
